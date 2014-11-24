@@ -3,6 +3,8 @@ jquery-flip-image
 
 Creates the effect of an image flipping to have a different image on the flip side
 
+As seen on Leodis Lager site - http://www.leodislager.com
+
 ## Usage
 
 1. Include jQuery:
