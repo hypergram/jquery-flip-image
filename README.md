@@ -41,4 +41,4 @@ View a demo here: http://www.p53.co.uk/labs/jquery-flip-image/demo
 
 ## Tips
 
-Keep images the same proportions and as smaller filesize as possible - SVGs work great
+Keep images the same proportions and filesizes as small as possible - SVGs work great
