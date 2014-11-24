@@ -9,7 +9,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
 	    	.flip {
-	  			transition: transform .5s;
+				-webkit-transition: -webkit-transform .5s linear; /* For Safari 3.1 to 6.0 */
+	  			transition: transform .5s linear;
 	    	}
 	    	.rotate-1 {
 				-ms-transform: rotateY(90deg); /* IE 9 */
@@ -90,7 +91,7 @@
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="../dist/jquery.flip-image.js"></script>
 	<script>
 	$('#btn-flip-1').click(function() { $('#flip-1').flipImage({flipSpeed:500, rotateClass:'rotate-1'}); });
