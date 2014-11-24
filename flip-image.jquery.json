@@ -1,0 +1,36 @@
+{
+	"name": "flip-image",
+	"title": "jQuery Flip Image",
+	"description": "Flip an image.",
+	"keywords": [
+		"jquery",
+		"flip-image",
+		"plugins"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Nick Goodliff",
+		"email": "nick@p53.co.uk",
+		"url": "https://github.com/project53"
+	},
+	"maintainers": [
+		{
+			"name": "Nick Goodliff",
+			"email": "nick@p53.co.uk",
+			"url": "https://github.com/project53"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/project53/jquery-flip-image/LICENSE"
+		}
+	],
+	"bugs": "https://github.com/project53/jquery-flip-image/issues",
+	"homepage": "https://github.com/project53/jquery-flip-image",
+	"docs": "https://github.com/project53/jquery-flip-image#readme",
+	"download": "https://github.com/project53/jquery-flip-image/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}

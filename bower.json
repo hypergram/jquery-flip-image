@@ -1,0 +1,17 @@
+{
+	"name": "jquery-flip-image",
+	"version": "1.0.0",
+	"homepage": "https://github.com/project53/jquery-flip-image",
+	"authors": [
+		"Nick Goodliff <nick@p53.co.uk>",
+		"Oliver Hunt <oliver@p53.co.uk>"
+	],
+	"description": "Flips an image",
+	"main": "src/jquery.flip-image.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"jquery-plugin"
+	],
+	"license": "MIT"
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Flip Image</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	    	.flip {
+	  			transition: transform .5s;
+	    	}
+	    	.rotate-1 {
+				-ms-transform: rotateY(90deg); /* IE 9 */
+				-webkit-transform: rotateY(90deg); /* Chrome, Safari, Opera */
+			  	transform: rotateY(90deg);
+			}
+	    	.rotate-2 {
+				-ms-transform: rotateX(90deg); /* IE 9 */
+				-webkit-transform: rotateX(90deg); /* Chrome, Safari, Opera */
+			  	transform: rotateX(90deg);
+			}
+	    	.rotate-3 {
+				-ms-transform: rotateY(90deg) rotateX(90deg); /* IE 9 */
+				-webkit-transform: rotateY(90deg) rotateX(90deg); /* Chrome, Safari, Opera */
+			  	transform: rotateY(90deg) rotateX(90deg);
+			}
+			.footer {
+				margin-top:100px;
+				border-top:1px solid #ccc;
+				padding-top: 50px;
+			}
+	    </style>
+	    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+	    <div class="row">
+		    <div class="col-sm-12">
+			    <div class="page-header">
+					<h1>jQuery Flip Image</h1>
+			    </div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<img id="flip-1" src="front.png" data-flip-src="back.png" class="flip" />
+							<div class="caption">
+								<pre class="small">transform: rotateY(90deg)</pre>
+								<button type="button" class="btn btn-primary btn-lg" id="btn-flip-1">Flip!</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<img id="flip-2" src="front.png" data-flip-src="back.png" class="flip" />
+							<div class="caption">
+								<pre class="small">transform: rotateX(90deg)</pre>
+								<button type="button" class="btn btn-primary btn-lg" id="btn-flip-2">Flip!</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<img id="flip-3" src="front.png" data-flip-src="back.png" class="flip" />
+							<div class="caption">
+								<pre class="small">transform: rotateY(90deg) rotateX(90deg)</pre>
+								<button type="button" class="btn btn-primary btn-lg" id="btn-flip-3">Flip!</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				    <div class="col-sm-12">
+						<p>See in action: <a href="http://www.leodislager.com">Leodis Lager</a>
+						<p>Github homepage: <a href="https://github.com/project53/jquery-flip-image">https://github.com/project53/jquery-flip-image</a></p>
+				    </div>
+				</div>
+		    </div>
+	    </div>
+	    <div class="row footer">
+		    <div class="col-sm-12">
+			    <p class="small text-center">&copy; 2014 Project 53 Ltd, Code licensed under <a href="https://github.com/project53/jquery-flip-image/LICENSE">MIT</a></p>
+		    </div>
+	    </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="../dist/jquery.flip-image.js"></script>
+	<script>
+	$('#btn-flip-1').click(function() { $('#flip-1').flipImage({flipSpeed:500, rotateClass:'rotate-1'}); });
+	$('#btn-flip-2').click(function() { $('#flip-2').flipImage({flipSpeed:500, rotateClass:'rotate-2'}); });
+	$('#btn-flip-3').click(function() { $('#flip-3').flipImage({flipSpeed:500, rotateClass:'rotate-3'}); });
+	</script>
+  </body>
+</html>

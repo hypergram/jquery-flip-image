@@ -1,0 +1,40 @@
+<h1>jquery-flip-image</h1>
+
+<p>Creates the effect of an image flipping to have a different image on the flip side</p>
+
+<h2>Usage</h2>
+
+<ol>
+<li><p>Include jQuery:</p>
+
+<p> <code>html
+ &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
+</code></p></li>
+<li><p>Include plugin&rsquo;s code:</p>
+
+<p> <code>html
+ &lt;script src="dist/jquery.flip-image.min.js"&gt;&lt;/script&gt;
+</code></p></li>
+<li><p>Add an image:</p>
+
+<p> <code>html
+ &lt;img id="img-1" src="my-image.png" data-flip-src="my-image-flip.png" alt="" /&gt;
+</code></p></li>
+<li><p>Call the plugin:</p>
+
+<p> <code>javascript
+ $("#img-1").flipImage({
+     flipSpeed: 400,
+     rotateClass: 'rotate'
+ });
+</code></p></li>
+</ol>
+
+
+<h2>Demo</h2>
+
+<p>View a demo here: http://www.p53.co.uk/labs/jquery-flip-image/demo</p>
+
+<h2>Tips</h2>
+
+<p>Keep images the same proportions and as smaller filesize as possible - SVGs work great</p>
